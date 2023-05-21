@@ -1,51 +1,93 @@
 
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #004AAd   ;
+  --secondary-color: #048A81 ;
+  --accent1-color: #048A81;
+  --accent2-color: #06D6A0;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "kalam";
+  --paragraph-font: Kalam, "light 300";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: #E1E1E1; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #E1E1E1; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #06D6A0;
+  --nav-hover-link-color: #e1e1e1;
+  --nav-hover-background-color: #396E94;
+}
+
+
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--heading-font);
+  padding: 0;
+}
 img {
     display: block;
     margin: 0 auto;
     max-width: 50%;
-  }
-
-body { 
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: #396E94;
 
 }
-header{
-    background-color: #E1E1E1;
+h4 {
+  color: var(--headline-color-on-white);
+}
+
+h2{
+    margin: 0;
+}
+header {
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
 }
 
 nav a:hover {
-    background-color: #E1E1E1;
-    color: black;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
 }
 
 nav a {
     text-align: center;
-    color: black;
-    text-decoration: none};
-
-
-h4 {
-    color: black;
+    color: var(--paragraph-color-on-white);
+    text-decoration: none;
+    padding: 35px;
 }
 
 main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
 footer {
-    background-color: #FED766;
-    color: black;
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
-    color: #396E94;
+    color: var(--paragraph-color-on-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #396E94;
+    color: var(--paragraph-color-on-color);
 }
 
 footer p {
@@ -56,53 +98,79 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-#--------------------------------------------------------------------------------------
+/*--------------------------------------------------------------*/
 .book, .join {
-    background-color: #FED766;
+    background-color: var(--accent2-color);
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-    background-color: #E1E1E1;
-    color: black;
+    background-color: var(--accent2-color);
+    color: var(--headline-color-on-color);
 }
 
 .button-box {
     text-align: center;
 }
 
+.card-img {
+    border: 10px solid #004AAd;
+}
+
 .home-title {
-    color: black;
+    color: var(--paragraph-color-on-white);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .logo {
     width: 80px;
+    
 }
 
 .msg {
-    background-color: #E1E1E1;
+    background-color: var(--nav-hover-background-color);
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
-    color: black;
+    color: var(--headline-color-on-color);
 }
 
 .msg p {
-    color: black;
+    color: var(--headline-color-on-color);
+    padding-bottom: 15px;
 }
 
 .icon {
     width: 80px;
+    padding: 10px;
 }
 
-#--------------------------------------------------------
+.social {
+   padding-top: 15px; 
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+/*--------------------------------------------------------*/
 
 #background {
     height: 725px;
-    background-color: #FED766;
+    background-color: var(--paragraph-color-on-color);
 }
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+}
+
+#logo_link{
+    padding-top: 5px;
 }
