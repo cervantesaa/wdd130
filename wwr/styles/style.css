@@ -218,6 +218,108 @@ footer p a:hover {
     justify-self: center;
     align-self: center;
 }
+
+/* Sub-page style*/
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 150px auto 150px 150px auto 150px 150px auto 150px ;
+
+}   
+
+.idaho-title {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    align-self: center;
+}
+.idaho-img {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    padding-top: 20px;
+}
+.idaho-msg {
+    grid-column: 4/6;
+    grid-row: 2/3;
+    padding: 20px;
+}
+#idaho-button {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    margin-top: 50px;
+}
+
+#rivers-background {
+    height: 750px;
+    background-color:  white;
+    grid-column: 1/7;
+    grid-row: 4/7;
+    z-index: -1;
+}
+
+.utah-title {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    align-self: center;
+}
+.utah-img {
+    width: 100%;
+    grid-column: 4/6;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+}
+.utah-msg {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    padding: 20px;
+}
+#utah-button {
+    grid-column: 3/5;
+    grid-row: 6/7;
+    margin-top: 50px;
+}
+
+.arizona-title {
+    grid-column: 3/5;
+    grid-row: 7/8;
+    align-self: center;
+}
+.arizona-img {
+
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 8/9;
+    justify-self: center;
+    align-self: center;
+}
+.arizona-msg {
+    grid-column: 4/6;
+    grid-row: 8/9;
+    padding: 20px;
+}
+#arizona-button {
+    grid-column: 3/5;
+    grid-row: 9/10;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query, don't add anything after this*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
