@@ -185,7 +185,95 @@ body {
 }
 
 
+/*Subpage 1 */
+.therapy-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 150px 1fr 150px 1fr 150px ;
+}
 
+.rehab-title {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.rehab-container {
+    position: relative;
+    width: 100%;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .rehab-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+    
+  .rehab-msg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #906486;
+  }
+  
+  .rehab-container:hover .rehab-msg {
+    opacity: 1;
+  }
+
+  .post-surgery-title {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+  .post-surgery-container {
+    position: relative;
+    width: 100%;
+    grid-column: 3/5;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .post-surgery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+    
+  .post-surgery-msg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #906486;
+  }
+  
+  .post-surgery-container:hover .post-surgery-msg {
+    opacity: 1;
+  }
+
+
+
+
+/* */
 
 footer {
     background-color: #E0AAFF;
